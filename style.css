@@ -12,6 +12,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-image: url(bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y : 100%;
 }
 .deneme {
   display: flex;
@@ -63,6 +67,18 @@ img {
   max-width: 150px;
 }
 
+.zort::after {
+    content: "";
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 40px 40px 0;
+bottom: -28px;
+left: 119.5px;
+position: absolute;
+border-color: transparent white transparent transparent;
+
+}
 .right-bar {
   width: 600px;
   height: 150px;
@@ -92,6 +108,7 @@ img {
   display: flex;
   gap: 2rem;
   align-items: flex-end;
+  margin-top: 77px;
 }
 
 .icon {
@@ -118,7 +135,7 @@ img {
     background-color: white;
     border: 5px solid white;
     padding: .8rem;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 0px 20px;
     position: absolute;
     right: 0px;
     bottom: 20px;   
@@ -127,6 +144,7 @@ img {
     align-items: center;
     color: black;
     font-weight: bold;
+    
 
 }
 
